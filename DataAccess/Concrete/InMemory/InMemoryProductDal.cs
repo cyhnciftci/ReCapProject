@@ -39,9 +39,9 @@ namespace DataAccess.Concrete.InMemory
             return _products;
         }
 
-        public List<Product> GetAllByCategory(int categoryId)
+        public List<Product> GetAllById(int productId)
         {
-            return _products.Where(p => p.CategoryId == categoryId).ToList();
+            return _products.Where(p => p.CategoryId == productId).ToList();
         }
 
         public void Update(Product product)
